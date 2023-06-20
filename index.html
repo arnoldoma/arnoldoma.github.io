@@ -18,13 +18,14 @@
     <div class="inicio" id="inicio">
       <div class="contenido-seccion">
         <header>
-          <div class="nav-bar">
+          <div class="nav-bar" onclick="mostrarOcultarMenu()">
             <i class="fa-solid fa-bars"></i>
           </div>
           <nav class="nav" id="nav">
             <a href="#inicio">Inicio</a>
             <a href="#sobremi">Sobre mí</a>
             <a href="#habilidades">Habilidades</a>
+            <a href="#resumen">Resumén</a>
             <a href="#contacto">Contacto</a>
           </nav>
           <div class="logo">A <span class="color">M</span></div>
@@ -52,11 +53,10 @@
         <h2 class="titulo-seccion">Sobre mí</h2>
         <h3>Detalles personales</h3>
 
-        <p class="especial">Me dedico a desarrollar sowfware como freelance</p>
+        <p class="especial">Me dedico a desarrollar sowfware como freelance.</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, ipsam
-          cumque eveniet dolores voluptatem delectus quaerat. Excepturi
-          repellendus eaque iure sint quasi, porro distinctio ad.
+          Soy una persona autodidacta que le gusta a mantenerse actualizado con
+          las nuevas tecnologias.
         </p>
 
         <div class="fila">
@@ -73,18 +73,16 @@
             <i class="fa-solid fa-location-pin"></i>
             <span class="titulo-detalle">Ubicación</span>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non,
-              hic, libero sunt in voluptatibus quasi a harum pariatur ducimus
-              consequatur expedita? Ullam quidem quaerat tempora.
+              Soy de una provincia, pero actualmente vivo en la Ciudad de
+              Guatemala
             </p>
           </div>
           <div class="col">
             <i class="fa-solid fa-flag"></i>
             <span class="titulo-detalle">Intereses</span>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non,
-              hic, libero sunt in voluptatibus quasi a harum pariatur ducimus
-              consequatur expedita? Ullam quidem quaerat tempora.
+              Me gusta aprender a programar, leer libros, hacer deportes, me
+              gustan los autos, me gusta pasar tiempo libre con mi familia.
             </p>
           </div>
         </div>
@@ -104,7 +102,7 @@
               <div class="barra" id="html">
                 <!-- mediante javascript luego genereremos 17 barritas con clase e -->
               </div>
-              <span>98%</span>
+              <span>90%</span>
             </div>
           </div>
           <div class="col">
@@ -119,7 +117,7 @@
         </div>
         <div class="fila">
           <div class="col">
-            <span>WORDPRESS</span>
+            <span>MY SQL</span>
             <div class="cont-barra">
               <div class="barra" id="wordpress">
                 <!-- mediante javascript luego genereremos 17 barritas con clase e -->
@@ -128,7 +126,7 @@
             </div>
           </div>
           <div class="col">
-            <span>PHOTOSHOP</span>
+            <span>SQL Server</span>
             <div class="cont-barra">
               <div class="barra" id="photoshop">
                 <!-- mediante javascript luego genereremos 17 barritas con clase e -->
@@ -144,22 +142,149 @@
               <div class="barra" id="php">
                 <!-- mediante javascript luego genereremos 17 barritas con clase e -->
               </div>
-              <span>95%</span>
+              <span>75%</span>
             </div>
           </div>
           <div class="col">
-            <span>ILUSTRATOR</span>
+            <span>PYTHON</span>
             <div class="cont-barra">
               <div class="barra" id="ilustrator">
                 <!-- mediante javascript luego genereremos 17 barritas con clase e -->
               </div>
-              <span>75%</span>
+              <span>65%</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="app.js	"></script>
+    <!-- SECCION RESUMEN -->
+    <section class="resumen" id="resumen">
+      <div class="contenido-seccion">
+        <h2 class="titulo-seccion">Resumen</h2>
+        <h3>Mi preparación y experiencia</h3>
+        <div class="info">
+          <div class="col">
+            <span class="titulo">Educación</span>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>2021 - 2021</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Programacion en PHP y Bases de datos.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Programacion PHP y BD</h4>
+                  <p>Intecap Guatemala</p>
+                  <!-- <span class="promedio"></span> -->
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>2014 - 2018</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Tengo 3 años de estudios en licenciatura en contaduría publica
+                  y auditoría.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Lic. en Contaduría Pública y Auditoría</h4>
+                  <p>Universidad de San Juan</p>
+                  <!-- <span class="promedio">8.9 PG</span> -->
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>2009 - 2011</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Estudie perito contador con orientacion en computación.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Perito Contador</h4>
+                  <p>Colegio Fuente de Vida</p>
+                  <!-- <span class="promedio"></span> -->
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col">
+            <span class="titulo">Experiencia Laboral</span>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>5 Años</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Trabaje como analista datos, cree el diseño y estructura de
+                  las tablas para libros contables y comisiones y para los
+                  informes se realizan con consultas avanzadas de SQL.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Dinant de Guatemala</h4>
+                  <p>Asendido a analista de datos</p>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>1 Año</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  Actualmente estoy trabajando como desarrollor de aplicaciones
+                  freelance, diseñando aplicaciones de punto de venta,
+                  inventarios, compras y ventas, cajas, esto con las tecnologias
+                  No Code.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Freelance.</h4>
+                  <p>Desarrolador de aplicaciones.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+      <div class="contenido-seccion">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <h3>Ponte en contacto ahora mismo!</h3>
+
+        <div class="fila">
+          <div class="col">
+            <h2><i class="fa-solid fa-phone"></i> Teléfono</h2>
+            <span class="info-contacto">+502 39697700</span>
+          </div>
+          <div class="col">
+            <h2><i class="fa-solid fa-envelope"></i> Correo</h2>
+            <span class="info-contacto">arnoldomap@gmail.com</span>
+          </div>
+          <div class="col">
+            <h2><i class="fa-solid fa-globe"></i> Página Web</h2>
+            <span class="info-contacto">arnoldomap.github.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
   </body>
 </html>
