@@ -1,0 +1,168 @@
+/* Importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&family=Yellowtail&display=swap');
+
+:root{
+    --view-maxWidth:1200px;
+    --dark-bg-primary:#940253;
+    --dark-bg-secundary:#e6e6e6;
+    --dark-txt-primary:#fff;
+    --dark-txt-secundary:#666;
+
+}
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Inicio */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url("img/fotolaptop.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: var(--dark-txt-primary);
+}
+
+.inicio .contenido-seccion{
+    max-width: var(--view-maxWidth);
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+/* menu lateral */
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: var(--dark-bg-primary);
+    padding: 15px;
+    border-radius: 10px; 
+    text-align: left;
+    z-index: 99; 
+    display: none;
+}
+
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: var(--dark-txt-primary);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ************ */
+.inicio .contenido-seccion header .logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Yellowtail";
+    text-shadow: 0 0 35px var(--dark-txt-primary); 
+}
+
+.inicio .contenido-seccion header .logo .color{
+    color: var(--dark-bg-primary)
+    font-family: "Yellowtail";
+}
+
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: var(--dark-bg-primary);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px var(--dark-txt-primary);
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: var(--dark-bg-primary);
+    border: 1px solid var(--dark-bg-primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transform: .3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: var(--dark-txt-primary);
+    background-color: var(--dark-bg-primary);
+    box-shadow: 0 0 20px var(--dark-txt-primary);
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--dark-bg-primary);
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+/* SOBRE MI */
+.titulo-seccion{
+    font-family: "Yellowtail",sans-serif;
+}
+.sobremi{
+    background-color: var(--dark-bg-secundary);
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion {
+    max-width: var(--view-maxWidth);
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobremi .contenido-seccion .especial{
+    color: var(--dark-bg-primary);
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: var(--view-maxWidth);
+    margin: auto;
+    color: var(--dark-txt-secundary);
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+
+}
